@@ -1,0 +1,63 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0 100px;
+  color: white;
+  background: url('images/css.png') fixed no-repeat center;
+}
+
+h2 {
+  color: #D2691E;
+  text-decoration: underline;
+
+}
+
+p {
+  text-indent: 30px;
+}
+
+th {
+  background-color: grey;
+  height: 50px;
+}
+
+td {
+  color: grey;
+  height: 50px;
+}
+
+table, td, th {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+
+#header + div > a {
+  background-color: #D2691E;
+  width: 120px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style-image: url('images/puce.gif')
+}
+
+#header + div > a:hover {
+  background-color: #E8B48E;
+}
+
+#header {
+  background-color: grey;
+  color: black;
+  padding: 5px;
+  /* height: 150px; */
+  text-align: center;
+  margin-bottom: 10px;
+}
+

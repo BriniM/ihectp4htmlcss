@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title> Les feuilles de style CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Les feuilles de styles CSS</h1>
+    </div>
+    <div>
+        <a href="#historique">Historique</a>
+        <a href="#syntaxe">Syntaxe</a>
+        <a href="#type">types de styles</a>
+        <a href="#liaison">Liaison</a>
+    </div>
+    <div id="section">
+        <p>
+            Le langage HTML a été créé avant tout pour décrire le contenu de la page, alors que les feuilles de style
+            permettent de décrire le style d'affichage de la page.
+            L'utilisation des feuilles de style permet un gain de temps dans la création des sites web et permettent
+            d'éviter l'encombrement du code HTML par les balises de mise en forme.
+        </p>
+        <a name="historique"></a>
+        <h2>Historique</h2>
+        <p>
+            La balise &lt;font&gt; qui permet la mise en forme du contenu html a été introduite dans html 3.2. Mais
+            cette balise a créée un probléme d'encombrement des pages web. En plus, pour changer le contenu des pages du
+            site, il faut modifier les balise &lt;font&gt; de cette page ce qui nécessite beaucoup de temps de travail.
+            La solution est arrivée avec le html 4.01 qui permet de lier les pages web avec des feuilles de style qui
+            sont des fichiers écrit avec le langage css créé par le w3c.
+        </p>
+        <a name="syntaxe"></a>
+        <h2>Syntaxe</h2>
+        <table border=1>
+            <tr>
+                <th>Sélecteur balise</th>
+                <th>Sélecteur identifiant</th>
+                <th>Sélecteur class</th>
+            </tr>
+
+            <tr>
+                <td>
+                    balise {déclaration;}
+                </td>
+                <td>
+                    #identifiant {déclaration;}
+                </td>
+                <td>
+                    .classe {déclaration;}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    p {text-indent:30px;}
+                </td>
+                <td>
+                    #header {background-color:gray;}
+                </td>
+                <td>
+                    .parag {text-align:right;}
+                </td>
+            </tr>
+        </table>
+        <a name="type"></a>
+        <h2>Type de style</h2>
+        <ul>
+            <li>Feuille de style externe : fichier css</li>
+            <li>Feuille de style interne : balise &lt;style&gt;</li>
+            <li>Style dans une balise</li>
+        </ul>
+        <a name="liaison"></a>
+        <h2>Liaison avec une feuille de style</h2>
+        <p>Pour lier un fichier html avec une feuille de style, il faut utiliser la balise &lt;link&gt;<br>
+            Exemple : La feuille de style est le fichier style.css qui est enregistré dans le méme chemin que la page
+            html:<br>
+            &lt;link href="style.css" type="text/css" rel="stylesheet"&gt;
+        </p>
+    </div>
+
+</body>
+
+</html>
